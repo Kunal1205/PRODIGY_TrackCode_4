@@ -1,0 +1,157 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light gray text for contrast */
+}
+
+/* Centering the entire page content */
+header,
+section,
+footer {
+    width: 100%;
+    max-width: 1200px; /* Limiting the max-width of the content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+}
+
+/* Styling for Header */
+header {
+    text-align: center; /* Center text */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffab40; /* Light orange color for links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.hero-section {
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(255, 171, 64, 0.5); /* Soft shadow for depth */
+}
+
+.hero-section h1 {
+   font-size: 36px;
+   color: #ffab40; /* Light orange color */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+.hero-section p {
+   font-size: 18px;
+   color: #b0bec5; /* Lighter gray for contrast */
+}
+
+/* Section Styles */
+section {
+   background-color: #1e1e1e; /* Darker background for sections */
+   border-radius: 10px;
+   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Darker shadow */
+   padding: 20px;
+   margin-bottom: 20px; /* Space between sections */
+   text-align: center; /* Center text in sections */
+   position: relative; /* For pseudo-element positioning */
+}
+
+/* Add a subtle texture effect using a pseudo-element */
+section::before {
+   content: '';
+   position: absolute;
+   top: -10px;
+   left: -10px;
+   right: -10px;
+   bottom: -10px;
+   background-image: url('path/to/your/texture.png'); /* Add texture image path here */
+   opacity: 0.1; /* Light texture effect */
+   border-radius: inherit; /* Match section border radius */
+   z-index: -1; /* Send it behind the section content */
+}
+
+/* Projects Section Styling */
+.projects-container {
+   display: flex;
+   justify-content: center; /* Center projects */
+   flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.project {
+   width: calc(30% - 20px); /* Responsive width with spacing */
+   margin: 10px; /* Space between project cards */
+   background-color: #2a2a2a; /* Dark background for project cards */
+   border-radius: 10px;
+   box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+   overflow: hidden; /* To hide overflow */
+   transition: transform .3s ease-in-out, box-shadow .3s ease-in-out; /* Smooth hover effect */
+}
+
+.project:hover {
+   transform: translateY(-5px); /* Lift effect on hover */
+   box-shadow: 0px 15px 30px rgba(255, 171, 64, .5); /* Enhanced shadow on hover for depth */
+}
+
+.project img {
+   width: 100%;
+   border-radius: 10px 10px 0 0; /* Round the top corners */
+}
+
+/* Skills List Styling */
+.skills-list {
+   list-style-type: none; /* Remove bullet points from list */
+}
+
+/* Contact Form Styles */
+form input,
+form textarea {
+   width: calc(100% - 20px); /* Full width minus padding */
+   padding: 10px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   border: none; 
+   background-color: #333; /* Darker background for inputs */
+   color: #e0e0e0; /* Light gray text for inputs */
+   box-shadow: inset 0 -2px rgba(255,171,64,.5); /* Inner shadow for depth effect on inputs*/
+}
+
+form button {
+   background-color: #ffab40; /* Light orange button color */
+   color:white ;
+   padding :10px20px ; 
+   border:none ;
+   border-radius :5 px ;
+   cursor:pointer ;
+}
+
+/* Footer Styling*/
+footer {
+   background-color:#1e1e1e ; /* Dark footer background*/
+   color:white ;
+   padding :20 px ;
+   text-align:center ;
+}
